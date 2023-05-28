@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Lawliet's studio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+       <!-- <script src="php/karte.php"></script>-->
+        <script src="php/pdf.php"></script>
+        <script src="js/karte.js"></script>
+    </head>
+    <body class="d-flex flex-column" >
+        <main class="flex-shrink-0" >
+            <!-- Navigation-->
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html">Lawliet's studio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Events.html">Events</a></li>
+                         <!-- toti portfolio, bo nardila kot karte recimo, za določene artiste,da jih bo poiskalo pol pa bos to ven vrgla-->
+                    </ul>
+                </div>
+                <div class="box">
+                    <a class="nav-icon position-relative text-decoration-none" title="Profil" href="registracija.html" id="registracija">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                        <span
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
+                    </a>
+            </div>
+                <div class="box">
+                    <input type="text" placeholder="Search...">
+                    
+                    <a href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </div>
+                
+        </nav>
+            <!-- Header-->
+            <header class="py-5">
+                <div class="container px-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-xxl-6">
+                            <div class="text-center my-5" >
+                                <h1 class="fw-bolder mb-3">Tickets</h1> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--ABOUT SECTION ONE-->
+            <section class="py-5 bg-light" id="scroll-target" onload="">
+                <iframe src="php/karte.php" width="100%" height="200"></iframe>
+               
+                <a class="nav-icon position-relative text-decoration-none"  id="karte" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                        <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    <p> Order tickets</p>
+                    </a>   
+              <form method="post" action="php/pdf.php">
+                <button class="btn btn-primary btn-lg " id="submit" type="submit" name="submit">Get ticket pdf</button>
+              </form>
+            
+            </section>
+           
+            <!-- Team members section-->
+            <div class="text-center my-5" >
+                <a href="https://www.youtube.com/channel/UC-KTRBl9_6AX10-Y7IKwKdw"> Youtube</a>
+            </div>
+           
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Lawliet's studio 2022</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#">Contact</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#">About</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            
+/* function pdf(){
+ const PDFDocument = require('pdfkit');
+const mysql = require('mysql');
+
+// Connect to the database
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'database'
+});
+
+connection.connect();
+
+// Retrieve the data from the database
+connection.query('SELECT * FROM dogodki', function (error, results, fields) {
+  if (error) throw error;
+
+  // Create a new PDF document
+  const doc = new PDFDocument();
+
+  // Add the data from the database to the PDF
+  results.forEach(functioSn(row) {
+    doc.text(row.field1 + ': ' + row.field2);
+  });
+
+  // Stream the PDF to the browser for download
+  doc.pipe(res);
+  doc.end();
+});
+
+connection.end();
+ }*/
+
+        </script>
+     </body>
+</html>
